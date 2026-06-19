@@ -1,22 +1,22 @@
 const items = [
   {
     name: "Mariana A.",
-    photo: "/images/depoimento-1.jpg",
+    photo: "/images/ps1.png",
     text: "Esse material me ajudou a voltar a ter constância com Deus sem sentir culpa.",
   },
   {
     name: "Beatriz S.",
-    photo: "/images/depoimento-2.jpg",
+    photo: "/images/ps2.png",
     text: "Eu achava que ser virtuosa era ser perfeita. Hoje entendo que é caminhar com direção.",
   },
   {
     name: "Carolina T.",
-    photo: "/images/depoimento-3.jpg",
+    photo: "/images/ps3.png",
     text: "A linguagem é simples, mas toca profundamente. Parece uma conversa de irmã mais velha.",
   },
   {
     name: "Joana P.",
-    photo: "/images/depoimento-4.jpg",
+    photo: "/images/ps4.png",
     text: "O planner de oração me ajudou muito a organizar minha vida espiritual.",
   },
 ];

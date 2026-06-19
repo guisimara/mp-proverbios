@@ -11,9 +11,9 @@ export function Expert() {
           <div className="relative">
             <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden shadow-elegant border-4 border-card bg-secondary flex items-center justify-center">
               <img
-                src="/images/leticia-fessel.jpg"
+                src="/images/leticia.png"
                 alt="Letícia Fessel"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
                 onError={(e) => {
                   const target = e.currentTarget;
                   target.style.display = "none";

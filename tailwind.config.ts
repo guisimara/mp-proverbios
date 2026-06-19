@@ -8,9 +8,10 @@ export default {
     container: { center: true, padding: "1.25rem", screens: { "2xl": "890px" } },
     extend: {
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'serif'],
+        serif: ['"Lora"', 'serif'],
         sans: ['Manrope', 'system-ui', 'sans-serif'],
         script: ['"Dancing Script"', 'cursive'],
+        poppins: ['"Poppins"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -1,4 +1,3 @@
-import { HeroMockupStack } from "../ProductMockup";
 import { CTAButton } from "../CTAButton";
 
 const bullets = [
@@ -27,19 +26,22 @@ export function Hero() {
           </span>
         </div>
 
-        <h1 className="mt-5 font-serif text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-brown reveal reveal-delay-1">
-          Descubra como viver a sabedoria da{" "}
-          <em className="text-primary font-medium">Mulher de Provérbios</em> no seu dia a dia
+        <h1 className="mt-5 font-serif text-brown reveal reveal-delay-1">
+          Em 10 minutos por dia, desenvolva uma rotina com Deus e comece a viver as virtudes da{" "}
+          <em className="text-primary font-medium">Mulher Virtuosa de Provérbios 31</em>
         </h1>
 
-        <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed reveal reveal-delay-2">
-          Um guia prático e espiritual para mulheres que desejam fortalecer sua identidade em Deus,
-          organizar sua rotina com propósito e viver uma feminilidade bíblica com mais leveza,
-          sabedoria e direção.
+        <p className="mt-5 text-muted-foreground max-w-xl mx-auto leading-relaxed reveal reveal-delay-2">
+          Um devocional prático e profundo para mulheres que desejam fortalecer sua identidade em Deus.
+          Organizar sua rotina com propósito e viver uma feminilidade Bíblica com mais leveza, sabedoria e direção.
         </p>
 
-        <div className="mt-10 reveal reveal-delay-2">
-          <HeroMockupStack />
+        <div className="mt-10 flex justify-center reveal reveal-delay-2">
+          <img
+            src="/images/mockup-hero.png"
+            alt="Mulher de Provérbios"
+            className="max-w-sm w-full"
+          />
         </div>
 
         <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-md mx-auto text-left reveal reveal-delay-3">

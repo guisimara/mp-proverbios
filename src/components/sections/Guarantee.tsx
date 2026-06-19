@@ -1,5 +1,3 @@
-import { ProductMockup } from "../ProductMockup";
-
 export function Guarantee() {
   return (
     <section className="section bg-background">
@@ -14,12 +12,15 @@ export function Guarantee() {
             </div>
           </div>
 
-          {/* Mockup abaixo do ícone */}
           <div className="flex justify-center mt-4 mb-6">
-            <ProductMockup title="Mulher de Provérbios" subtitle="Garantia 7 Dias" size="md" variant="rose" />
+            <img
+              src="/images/mockup-m2.png"
+              alt="Garantia de 7 dias"
+              className="max-w-[240px] w-full"
+            />
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl text-brown">Você tem 7 dias de garantia</h2>
+          <h2 className="font-serif text-brown">Você tem 7 dias de garantia</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Se por algum motivo você sentir que o material não é para você, basta solicitar o
             reembolso dentro do prazo de garantia. Simples, seguro e sem burocracia.

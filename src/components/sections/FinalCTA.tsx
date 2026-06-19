@@ -1,4 +1,3 @@
-import { ProductMockup } from "../ProductMockup";
 import { CTAButton } from "../CTAButton";
 
 export function FinalCTA() {
@@ -8,7 +7,7 @@ export function FinalCTA() {
         <div className="divider-ornament">
           <span className="text-[0.65rem] tracking-[0.3em] uppercase">Sua decisão</span>
         </div>
-        <h2 className="font-serif text-3xl sm:text-5xl text-brown leading-[1.1] max-w-xl mx-auto">
+        <h2 className="font-serif text-brown leading-[1.1] max-w-xl mx-auto">
           Deus não te chamou para viver perdida em si mesma.
         </h2>
         <p className="mt-5 text-muted-foreground max-w-lg mx-auto leading-relaxed">
@@ -17,7 +16,11 @@ export function FinalCTA() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <ProductMockup title="Mulher de Provérbios" subtitle="Comece Hoje" size="lg" variant="rose" />
+          <img
+            src="/images/mockup-hero.png"
+            alt="Mulher de Provérbios"
+            className="max-w-sm w-full"
+          />
         </div>
 
         <div className="mt-10">

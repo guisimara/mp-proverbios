@@ -1,4 +1,3 @@
-import { ProductMockup } from "../ProductMockup";
 import { CTAButton } from "../CTAButton";
 
 const features = [
@@ -17,7 +16,7 @@ export function ProductIntro() {
         <div className="divider-ornament">
           <span className="text-[0.65rem] tracking-[0.3em] uppercase">O Produto</span>
         </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-brown leading-tight">
+        <h2 className="font-serif text-brown leading-tight">
           Conheça o <em className="text-primary font-medium">Mulher de Provérbios</em>
         </h2>
         <p className="mt-5 text-muted-foreground max-w-xl mx-auto leading-relaxed">
@@ -27,7 +26,11 @@ export function ProductIntro() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <ProductMockup title="Mulher de Provérbios" subtitle="Guia Cristão Digital" size="lg" variant="rose" />
+          <img
+            src="/images/mockup-m2.png"
+            alt="Mulher de Provérbios"
+            className="max-w-sm w-full"
+          />
         </div>
 
         <ul className="mt-10 grid sm:grid-cols-2 gap-3 max-w-lg mx-auto text-left">

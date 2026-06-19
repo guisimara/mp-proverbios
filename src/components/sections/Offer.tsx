@@ -2,12 +2,15 @@ import { ProductMockup } from "../ProductMockup";
 import { CTAButton } from "../CTAButton";
 
 const values = [
-  ["Material Mulher de Provérbios", "R$ 97,00"],
-  ["Planner de Oração", "R$ 47,00"],
-  ["Propósito 40 Dias", "R$ 47,00"],
-  ["Afirmações Bíblicas", "R$ 27,00"],
-  ["Mulher Plena", "R$ 37,00"],
-  ["O Poder da Mesa", "R$ 37,00"],
+  ["Mulher de Provérbios", "R$ 97,00"],
+  ["Propósito de 40 Dias da Mulher Virtuosa", "R$ 47,00"],
+  ["Mulher Plena: Equilíbrio Espiritual, Emoções e Pessoal", "R$ 37,00"],
+  ["O Poder da Mesa: Restaurando lares e corações", "R$ 37,00"],
+  ["Temperamentos e Relacionamentos", "R$ 47,00"],
+  ["Oração Intercessora: Impactando Vidas Através da Fé", "R$ 37,00"],
+  ["Aulas em Vídeo Exclusivas para Alunas", "R$ 97,00"],
+  ["Jejum de Ester", "R$ 27,00"],
+  ["Áudio Especial de Afirmações Bíblicas para Mulheres", "R$ 27,00"],
 ];
 
 const trustCards = [
@@ -55,8 +58,9 @@ export function Offer() {
             Oferta especial por tempo limitado
           </span>
 
-          <h2 className="relative font-serif text-3xl sm:text-4xl text-brown leading-tight max-w-xl mx-auto">
-            Comece hoje mesmo sua jornada como uma Mulher de Provérbios
+          <h2 className="relative font-serif text-brown leading-tight max-w-xl mx-auto">
+            Comece hoje mesmo sua jornada como uma{" "}
+            <em className="text-primary font-medium">Mulher de Provérbios</em>
           </h2>
 
           {/* Mockup */}
@@ -82,14 +86,14 @@ export function Offer() {
             </div>
             <div className="flex justify-between items-center pt-3 text-sm font-semibold text-brown">
               <span>Valor total</span>
-              <span className="line-through text-muted-foreground">R$ 292,00</span>
+              <span className="line-through text-muted-foreground">R$ 453,00</span>
             </div>
           </div>
 
           {/* Pitch */}
           <div className="relative mt-8 max-w-sm mx-auto">
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Por tudo isso, você não vai pagar R$ 292. Hoje, você garante acesso completo ao kit
+              Por tudo isso, você não vai pagar R$ 453. Hoje, você garante acesso completo ao kit
               por um investimento único — sem assinatura, sem renovação.
             </p>
           </div>
@@ -97,8 +101,11 @@ export function Offer() {
           {/* Preço */}
           <div className="relative mt-6">
             <p className="text-xs tracking-[0.25em] uppercase text-muted-foreground">Hoje por apenas</p>
-            <p className="font-sans font-black text-6xl sm:text-7xl text-primary mt-1 tracking-tight">
-              R$<span className="text-5xl sm:text-6xl">37</span><span className="text-3xl sm:text-4xl">,90</span>
+            <p
+              className="text-primary mt-1 tracking-tight leading-none"
+              style={{ fontFamily: '"Poppins", sans-serif', fontWeight: 700, fontSize: "7rem" }}
+            >
+              R$ 37,90
             </p>
             <p className="text-sm text-muted-foreground mt-1">ou em até 5x de R$ 8,24</p>
           </div>
