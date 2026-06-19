@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/user/Documents/guilherme-simara/github/mp-proverbios && if git log -1 --format='%H' 2>/dev/null | grep -q .; then git push origin main 2>&1 | tail -3; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

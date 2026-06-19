@@ -53,7 +53,7 @@ export function Offer() {
           </div>
 
           <div className="relative mt-8">
-            <CTAButton variant="gold" microcopy="Acesso imediato após a compra • Material digital • Compra 100% segura">
+            <CTAButton variant="gold" toCheckout microcopy="Acesso imediato após a compra • Material digital • Compra 100% segura">
               Quero garantir meu acesso
             </CTAButton>
           </div>

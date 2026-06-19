@@ -1,22 +1,28 @@
 import { ReactNode } from "react";
 
+const CHECKOUT_URL = "https://pay.kiwify.com.br/n09blri";
+
 export function CTAButton({
   children = "Quero começar agora",
-  href = "https://checkout.exemplo.com/mulher-de-proverbios",
+  href,
+  toCheckout = false,
   variant = "primary",
   microcopy,
 }: {
   children?: ReactNode;
   href?: string;
+  toCheckout?: boolean;
   variant?: "primary" | "gold";
   microcopy?: string;
 }) {
+  const resolvedHref = toCheckout ? CHECKOUT_URL : (href ?? "#oferta");
+  const isExternal = resolvedHref.startsWith("http");
+
   return (
     <div className="flex flex-col items-center gap-3">
       <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        href={resolvedHref}
+        {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         className={variant === "gold" ? "btn-gold" : "btn-primary"}
       >
         {children}

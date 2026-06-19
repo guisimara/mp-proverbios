@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function StickyCTA({ href = "https://checkout.exemplo.com/mulher-de-proverbios" }: { href?: string }) {
+export function StickyCTA() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -18,9 +18,7 @@ export function StickyCTA({ href = "https://checkout.exemplo.com/mulher-de-prove
     >
       <div className="bg-card/95 backdrop-blur border-t border-border shadow-elegant px-4 py-3">
         <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#oferta"
           className="btn-primary w-full text-xs"
         >
           Garantir acesso por R$ 37,90
