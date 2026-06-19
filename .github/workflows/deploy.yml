@@ -33,4 +33,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./dist/
-          server-dir: /public_html/mulherdeproverbios/
+          server-dir: public_html/mulherdeproverbios/
+          dangerous-clean-slate: false
