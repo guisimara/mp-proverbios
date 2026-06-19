@@ -67,7 +67,8 @@ export function Offer() {
             <img
               src="/images/mockup-oferta.png"
               alt="Kit Mulher de Provérbios"
-              className="max-w-sm w-full"
+              className="w-full"
+              style={{ maxWidth: "40rem" }}
             />
           </div>
 

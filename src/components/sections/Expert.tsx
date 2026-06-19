@@ -8,8 +8,8 @@ export function Expert() {
 
         {/* Foto — placeholder até a foto real chegar */}
         <div className="flex justify-center mb-6">
-          <div className="relative">
-            <div className="w-[40%] aspect-square rounded-full overflow-hidden shadow-elegant border-4 border-card bg-secondary flex items-center justify-center">
+          <div className="relative w-full flex flex-col items-center">
+            <div className="w-[40%] aspect-square rounded-full overflow-hidden shadow-elegant border-4 border-card bg-secondary flex items-center justify-center mx-auto">
               <img
                 src="/images/leticia.png"
                 alt="Letícia Fessel"

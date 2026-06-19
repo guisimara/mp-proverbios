@@ -29,7 +29,8 @@ export function ProductIntro() {
           <img
             src="/images/mockup-m2.png"
             alt="Mulher de Provérbios"
-            className="max-w-sm w-full"
+            className="w-full"
+            style={{ maxWidth: "35rem" }}
           />
         </div>
 

@@ -72,7 +72,7 @@ export function IncludedItems() {
           <span className="text-[0.8rem] tracking-[0.3em] uppercase">Tudo Incluso</span>
         </div>
         <h2 className="font-serif text-brown leading-tight">
-          Veja tudo o que você recebe comprando o{" "}
+          Veja tudo o que você recebe comprando o<br />
           <em className="text-primary font-medium">Mulher de Provérbios</em>
         </h2>
         <p className="mt-3 text-muted-foreground max-w-md mx-auto">
@@ -89,7 +89,8 @@ export function IncludedItems() {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full object-contain"
+                  className="object-contain"
+                  style={{ width: item.img.includes("mkp-afirm") ? "70%" : "100%" }}
                 />
               </div>
 

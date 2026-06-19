@@ -19,7 +19,8 @@ export function FinalCTA() {
           <img
             src="/images/mockup-hero.png"
             alt="Mulher de Provérbios"
-            className="max-w-md w-full"
+            className="w-full"
+            style={{ maxWidth: "35rem" }}
           />
         </div>
 
