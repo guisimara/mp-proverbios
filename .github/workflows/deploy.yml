@@ -33,5 +33,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./dist/
-          server-dir: domains/lp.leticiafessel.com.br/public_html/
+          server-dir: domains/leticiafessel.com.br/public_html/lp/
           dangerous-clean-slate: true
