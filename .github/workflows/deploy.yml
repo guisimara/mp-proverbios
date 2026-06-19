@@ -34,4 +34,6 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: domains/leticiafessel.com.br/public_html/lp/
-          dangerous-clean-slate: true
+          exclude: |
+            **/.git*
+            **/.git*/**
