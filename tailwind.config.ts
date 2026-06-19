@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'serif'],
         sans: ['Manrope', 'system-ui', 'sans-serif'],
+        script: ['"Dancing Script"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",

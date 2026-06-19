@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    /* Mulher de Provérbios — elegant Christian feminine palette */
+    /* Mulher de Provérbios — vinho pastel / mauve elegante */
     --background: 36 38% 96%;          /* warm off-white / cream */
     --foreground: 25 25% 18%;          /* deep warm brown */
 
@@ -14,44 +14,46 @@
     --popover: 35 50% 98%;
     --popover-foreground: 25 25% 18%;
 
-    --primary: 14 30% 48%;             /* rosé queimado */
+    --primary: 345 25% 55%;            /* vinho pastel / mauve */
     --primary-foreground: 36 50% 97%;
 
-    --secondary: 33 35% 88%;           /* nude / soft beige */
+    --secondary: 345 18% 91%;          /* nude vinho muito suave */
     --secondary-foreground: 25 30% 22%;
 
-    --muted: 33 25% 92%;
+    --muted: 345 12% 93%;
     --muted-foreground: 25 12% 42%;
 
-    --accent: 38 45% 60%;              /* soft gold */
+    --accent: 38 45% 60%;              /* soft gold — mantido */
     --accent-foreground: 25 30% 18%;
 
     --gold: 38 55% 55%;
     --gold-soft: 38 50% 78%;
-    --rose: 14 35% 52%;
-    --rose-soft: 14 40% 88%;
+    --rose: 345 28% 58%;               /* vinho pastel / rose-wine */
+    --rose-soft: 345 25% 91%;
     --olive: 75 20% 38%;
     --brown: 25 30% 28%;
 
     --destructive: 0 70% 45%;
     --destructive-foreground: 36 50% 97%;
 
-    --border: 30 25% 86%;
-    --input: 30 25% 86%;
-    --ring: 14 30% 48%;
+    --border: 345 18% 87%;
+    --input: 345 18% 87%;
+    --ring: 345 25% 55%;
 
     --radius: 1rem;
 
     /* Gradients & shadows */
-    --gradient-warm: linear-gradient(180deg, hsl(36 45% 97%) 0%, hsl(30 40% 93%) 100%);
-    --gradient-rose: linear-gradient(135deg, hsl(14 35% 60%) 0%, hsl(20 38% 50%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(36 45% 97%) 0%, hsl(345 20% 94%) 100%);
+    --gradient-rose: linear-gradient(135deg, hsl(345 28% 65%) 0%, hsl(345 25% 50%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(38 55% 65%) 0%, hsl(32 45% 50%) 100%);
-    --gradient-offer: linear-gradient(180deg, hsl(36 55% 96%) 0%, hsl(32 45% 91%) 100%);
+    --gradient-offer: linear-gradient(180deg, hsl(36 55% 96%) 0%, hsl(345 22% 92%) 100%);
+    --gradient-green: linear-gradient(135deg, hsl(142 42% 58%) 0%, hsl(142 38% 44%) 100%);
 
     --shadow-soft: 0 4px 24px -8px hsl(25 30% 30% / 0.12);
-    --shadow-elegant: 0 20px 50px -20px hsl(14 30% 35% / 0.25);
+    --shadow-elegant: 0 20px 50px -20px hsl(345 25% 35% / 0.22);
     --shadow-gold: 0 10px 40px -12px hsl(38 55% 45% / 0.35);
     --shadow-card: 0 2px 12px -4px hsl(25 25% 25% / 0.08);
+    --shadow-green: 0 10px 40px -12px hsl(142 45% 35% / 0.38);
   }
 }
 
@@ -74,6 +76,10 @@
     font-family: 'Cormorant Garamond', 'Times New Roman', serif;
     letter-spacing: -0.01em;
   }
+
+  .font-script {
+    font-family: 'Dancing Script', cursive;
+  }
 }
 
 @layer components {
@@ -91,6 +97,16 @@
     @apply h-px w-16 bg-gradient-to-r from-transparent via-accent/60 to-transparent;
   }
 
+  /* Label com linhas laterais coladas ao texto (como na imagem de referência) */
+  .divider-label {
+    @apply flex items-center justify-center gap-2 text-brown/60;
+  }
+  .divider-label::before,
+  .divider-label::after {
+    content: "";
+    @apply h-px w-10 bg-brown/30;
+  }
+
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-semibold tracking-wide text-sm uppercase transition-all duration-300;
     background: var(--gradient-rose);
@@ -99,7 +115,7 @@
   }
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 25px 55px -15px hsl(14 30% 35% / 0.4);
+    box-shadow: 0 25px 55px -15px hsl(345 25% 35% / 0.4);
   }
 
   .btn-gold {
@@ -110,6 +126,17 @@
   }
   .btn-gold:hover {
     transform: translateY(-2px);
+  }
+
+  .btn-green {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-semibold tracking-wide text-sm uppercase transition-all duration-300;
+    background: var(--gradient-green);
+    color: white;
+    box-shadow: var(--shadow-green);
+  }
+  .btn-green:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 50px -15px hsl(142 45% 35% / 0.5);
   }
 
   .card-soft {

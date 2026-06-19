@@ -1,12 +1,30 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Como recebo o material?", a: "Após a confirmação da compra, você recebe o acesso no e-mail cadastrado." },
-  { q: "O material é físico?", a: "Não. O Mulher de Provérbios é 100% digital." },
-  { q: "Posso acessar pelo celular?", a: "Sim. Você pode acessar pelo celular, tablet ou computador." },
-  { q: "Serve para solteiras?", a: "Sim. O conteúdo foi pensado para mulheres solteiras, casadas e mães." },
-  { q: "Por quanto tempo tenho acesso?", a: "Você terá acesso conforme as condições informadas na plataforma de compra." },
-  { q: "Tem garantia?", a: "Sim. Você tem 7 dias de garantia." },
+  {
+    q: "Como recebo o material?",
+    a: "Após a confirmação da compra, você recebe o acesso no e-mail cadastrado.",
+  },
+  {
+    q: "O material é físico?",
+    a: "Não. O Mulher de Provérbios e todos os bônus são 100% digitais para uso em qualquer dispositivo. O livro físico será lançado em breve, ainda em negociação com uma editora, porém, sem retorno previsto de prazo para que seja publicado. Pode levar mais de 6 meses.",
+  },
+  {
+    q: "Posso acessar pelo celular?",
+    a: "Sim. Você pode acessar pelo celular, tablet ou computador.",
+  },
+  {
+    q: "Serve para solteiras?",
+    a: "Sim. O conteúdo foi pensado para mulheres solteiras, casadas e mães.",
+  },
+  {
+    q: "Por quanto tempo tenho acesso?",
+    a: "Você terá acesso vitalício aos materiais e aulas gravadas, não é um produto de renovação anual.",
+  },
+  {
+    q: "Tem garantia?",
+    a: "Sim. Você tem 7 dias de garantia.",
+  },
 ];
 
 export function FAQ() {

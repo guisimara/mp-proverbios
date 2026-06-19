@@ -14,12 +14,20 @@ export function Hero() {
       <div className="absolute inset-0 opacity-40 pointer-events-none"
         style={{ backgroundImage: "radial-gradient(ellipse at top, hsl(var(--rose-soft)) 0%, transparent 60%)" }} />
       <div className="container-page relative pt-12 pb-16 sm:pt-16 sm:pb-20 text-center">
-        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-card/80 border border-accent/30 text-xs tracking-[0.2em] uppercase text-brown reveal">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-          Material cristão digital para mulheres
-        </span>
 
-        <h1 className="mt-6 font-serif text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-brown reveal reveal-delay-1">
+        {/* By Leticia Fessel — fonte manuscrita, base de logotipo */}
+        <p className="font-script text-2xl sm:text-3xl text-primary/80 tracking-wide reveal">
+          By Leticia Fessel
+        </p>
+
+        {/* Label com linhas laterais */}
+        <div className="mt-5 divider-label reveal">
+          <span className="text-[0.65rem] tracking-[0.22em] uppercase text-brown/55 font-sans">
+            Material Cristão Para Mulheres
+          </span>
+        </div>
+
+        <h1 className="mt-5 font-serif text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-brown reveal reveal-delay-1">
           Descubra como viver a sabedoria da{" "}
           <em className="text-primary font-medium">Mulher de Provérbios</em> no seu dia a dia
         </h1>
