@@ -73,7 +73,7 @@ export function Offer() {
           </div>
 
           {/* Você recebe hoje */}
-          <div className="relative mt-8 max-w-sm mx-auto">
+          <div className="relative mt-8 mx-auto" style={{ maxWidth: "35rem" }}>
             <p className="text-[0.8rem] tracking-[0.28em] uppercase text-accent mb-4">Você recebe hoje</p>
             <div className="space-y-2 text-left">
               {values.map(([n, v]) => (
