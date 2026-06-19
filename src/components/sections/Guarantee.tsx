@@ -16,7 +16,7 @@ export function Guarantee() {
             <img
               src="/images/mockup-m2.png"
               alt="Garantia de 7 dias"
-              className="max-w-[240px] w-full"
+              className="w-[80%]"
             />
           </div>
 

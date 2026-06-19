@@ -78,14 +78,14 @@
   }
 
   h1 {
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.1;
   }
 
   @media (min-width: 640px) {
     h1 {
-      font-size: 3.4rem;
+      font-size: 2.5rem;
     }
   }
 

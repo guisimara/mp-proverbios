@@ -6,7 +6,7 @@ export function Transformation() {
     <section className="section bg-gradient-warm">
       <div className="container-page text-center">
         <div className="divider-ornament">
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase">Transformação</span>
+          <span className="text-[0.8rem] tracking-[0.3em] uppercase">Transformação</span>
         </div>
         <h2 className="font-serif text-3xl sm:text-4xl text-brown leading-tight max-w-2xl mx-auto">
           O que muda quando você começa a construir sua vida com sabedoria bíblica?

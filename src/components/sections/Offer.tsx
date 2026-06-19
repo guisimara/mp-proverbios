@@ -1,4 +1,3 @@
-import { ProductMockup } from "../ProductMockup";
 import { CTAButton } from "../CTAButton";
 
 const values = [
@@ -54,7 +53,7 @@ export function Offer() {
           <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-gold/10" />
           <div className="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-rose/10" />
 
-          <span className="relative inline-block px-4 py-1 rounded-full bg-gold/20 text-brown text-[0.65rem] tracking-[0.25em] uppercase mb-4">
+          <span className="relative inline-block px-4 py-1 rounded-full bg-gold/20 text-brown text-[0.8rem] tracking-[0.25em] uppercase mb-4">
             Oferta especial por tempo limitado
           </span>
 
@@ -63,14 +62,18 @@ export function Offer() {
             <em className="text-primary font-medium">Mulher de Provérbios</em>
           </h2>
 
-          {/* Mockup */}
+          {/* Imagem da oferta */}
           <div className="relative mt-8 flex justify-center">
-            <ProductMockup title="Mulher de Provérbios" subtitle="Kit Completo" size="lg" variant="rose" />
+            <img
+              src="/images/mockup-oferta.png"
+              alt="Kit Mulher de Provérbios"
+              className="max-w-sm w-full"
+            />
           </div>
 
           {/* Você recebe hoje */}
           <div className="relative mt-8 max-w-sm mx-auto">
-            <p className="text-[0.65rem] tracking-[0.28em] uppercase text-accent mb-4">Você recebe hoje</p>
+            <p className="text-[0.8rem] tracking-[0.28em] uppercase text-accent mb-4">Você recebe hoje</p>
             <div className="space-y-2 text-left">
               {values.map(([n, v]) => (
                 <div key={n} className="flex justify-between items-center py-1.5 border-b border-dashed border-border text-sm text-brown/85">
@@ -103,11 +106,11 @@ export function Offer() {
             <p className="text-xs tracking-[0.25em] uppercase text-muted-foreground">Hoje por apenas</p>
             <p
               className="text-primary mt-1 tracking-tight leading-none"
-              style={{ fontFamily: '"Poppins", sans-serif', fontWeight: 700, fontSize: "7rem" }}
+              style={{ fontFamily: '"Poppins", sans-serif', fontWeight: 700, fontSize: "5rem" }}
             >
               R$ 37,90
             </p>
-            <p className="text-sm text-muted-foreground mt-1">ou em até 5x de R$ 8,24</p>
+            <p className="text-muted-foreground mt-1" style={{ fontSize: "1.2rem" }}>ou em até 5x de R$ 8,24</p>
           </div>
 
           {/* Botão verde */}
@@ -130,7 +133,7 @@ export function Offer() {
             {trustCards.map((c) => (
               <div key={c.label} className="flex flex-col items-center gap-1.5 bg-secondary/50 rounded-xl p-3 border border-border/50">
                 <span className="text-accent">{c.icon}</span>
-                <p className="text-[0.65rem] font-semibold text-brown leading-tight text-center">{c.label}</p>
+                <p className="text-[0.8rem] font-semibold text-brown leading-tight text-center">{c.label}</p>
                 <p className="text-[0.55rem] text-muted-foreground text-center leading-tight">{c.sub}</p>
               </div>
             ))}

@@ -33,7 +33,7 @@ export function FAQ() {
       <div className="container-page">
         <div className="text-center">
           <div className="divider-ornament">
-            <span className="text-[0.65rem] tracking-[0.3em] uppercase">Dúvidas</span>
+            <span className="text-[0.8rem] tracking-[0.3em] uppercase">Dúvidas</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl text-brown">Perguntas frequentes</h2>
         </div>

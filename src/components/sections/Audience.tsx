@@ -19,7 +19,7 @@ export function Audience() {
       <div className="container-page space-y-10">
         <div>
           <div className="divider-ornament">
-            <span className="text-[0.65rem] tracking-[0.3em] uppercase">Para Você</span>
+            <span className="text-[0.8rem] tracking-[0.3em] uppercase">Para Você</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl text-brown leading-tight text-center max-w-lg mx-auto">
             Esse material é para você se...

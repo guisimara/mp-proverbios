@@ -10,7 +10,7 @@ export function PainPoint() {
     <section className="section bg-background">
       <div className="container-page text-center">
         <div className="divider-ornament">
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase">Identificação</span>
+          <span className="text-[0.8rem] tracking-[0.3em] uppercase">Identificação</span>
         </div>
         <h2 className="font-serif text-3xl sm:text-4xl text-brown leading-tight max-w-xl mx-auto">
           Você sente que ama a Deus, mas ainda se sente perdida na prática?

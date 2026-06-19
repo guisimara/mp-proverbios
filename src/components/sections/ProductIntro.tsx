@@ -14,7 +14,7 @@ export function ProductIntro() {
     <section className="section bg-background">
       <div className="container-page text-center">
         <div className="divider-ornament">
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase">O Produto</span>
+          <span className="text-[0.8rem] tracking-[0.3em] uppercase">O Produto</span>
         </div>
         <h2 className="font-serif text-brown leading-tight">
           Conheça o <em className="text-primary font-medium">Mulher de Provérbios</em>

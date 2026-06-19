@@ -5,7 +5,7 @@ export function FinalCTA() {
     <section className="section bg-background pb-32 sm:pb-24">
       <div className="container-page text-center">
         <div className="divider-ornament">
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase">Sua decisão</span>
+          <span className="text-[0.8rem] tracking-[0.3em] uppercase">Sua decisão</span>
         </div>
         <h2 className="font-serif text-brown leading-[1.1] max-w-xl mx-auto">
           Deus não te chamou para viver perdida em si mesma.
@@ -19,7 +19,7 @@ export function FinalCTA() {
           <img
             src="/images/mockup-hero.png"
             alt="Mulher de Provérbios"
-            className="max-w-sm w-full"
+            className="max-w-md w-full"
           />
         </div>
 

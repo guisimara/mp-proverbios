@@ -21,7 +21,7 @@ export function Hero() {
 
         {/* Label com linhas laterais */}
         <div className="mt-5 divider-label reveal">
-          <span className="text-[0.65rem] tracking-[0.22em] uppercase text-brown/55 font-sans">
+          <span className="text-[0.8rem] tracking-[0.22em] uppercase text-brown/55 font-sans">
             Material Cristão Para Mulheres
           </span>
         </div>
@@ -40,7 +40,7 @@ export function Hero() {
           <img
             src="/images/mockup-hero.png"
             alt="Mulher de Provérbios"
-            className="max-w-sm w-full"
+            className="max-w-sm sm:max-w-lg w-full"
           />
         </div>
 

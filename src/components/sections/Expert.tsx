@@ -3,13 +3,13 @@ export function Expert() {
     <section className="section bg-background">
       <div className="container-page text-center">
         <div className="divider-ornament">
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase">Sobre Mim</span>
+          <span className="text-[0.8rem] tracking-[0.3em] uppercase">Sobre Mim</span>
         </div>
 
         {/* Foto — placeholder até a foto real chegar */}
         <div className="flex justify-center mb-6">
           <div className="relative">
-            <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden shadow-elegant border-4 border-card bg-secondary flex items-center justify-center">
+            <div className="w-[40%] aspect-square rounded-full overflow-hidden shadow-elegant border-4 border-card bg-secondary flex items-center justify-center">
               <img
                 src="/images/leticia.png"
                 alt="Letícia Fessel"
@@ -31,11 +31,11 @@ export function Expert() {
         </div>
 
         {/* Mini título */}
-        <p className="mt-8 text-[0.65rem] tracking-[0.25em] uppercase text-accent font-sans">
+        <p className="mt-8 text-[0.9rem] tracking-[0.25em] uppercase text-accent font-sans">
           Fundadora do Clube da Mulher Virtuosa
         </p>
 
-        <h2 className="mt-2 font-serif text-3xl sm:text-4xl text-brown leading-tight max-w-xl mx-auto">
+        <h2 className="mt-2 font-serif text-brown leading-tight max-w-xl mx-auto">
           Criado por uma mulher cristã para mulheres cristãs
         </h2>
 
