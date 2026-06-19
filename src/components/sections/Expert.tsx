@@ -35,11 +35,11 @@ export function Expert() {
           Fundadora do Clube da Mulher Virtuosa
         </p>
 
-        <h2 className="mt-2 font-serif text-brown leading-tight max-w-xl mx-auto">
+        <h2 className="mt-2 font-serif text-brown leading-tight max-w-xl mx-auto" style={{ fontSize: "1.9rem" }}>
           Criado por uma mulher cristã para mulheres cristãs
         </h2>
 
-        <div className="mt-6 space-y-4 text-muted-foreground max-w-xl mx-auto leading-relaxed text-left sm:text-center">
+        <div className="mt-6 space-y-4 text-muted-foreground max-w-xl mx-auto leading-relaxed text-left sm:text-center text-[0.9rem]">
           <p>
             Sou criadora de conteúdos sobre feminilidade bíblica, identidade em Cristo, vida espiritual e
             construção de uma rotina com propósito. Este material nasceu para ajudar mulheres comuns a

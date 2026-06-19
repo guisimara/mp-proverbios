@@ -19,9 +19,9 @@ export function Hero() {
           By Leticia Fessel
         </p>
 
-        {/* Label com linhas laterais */}
-        <div className="mt-5 divider-label reveal">
-          <span className="text-[0.8rem] tracking-[0.22em] uppercase text-brown/55 font-sans">
+        {/* Label sem linhas laterais */}
+        <div className="mt-5 reveal">
+          <span className="text-[0.65rem] tracking-[0.15em] uppercase text-brown/55 font-sans whitespace-nowrap">
             Material Cristão Para Mulheres
           </span>
         </div>
@@ -31,7 +31,7 @@ export function Hero() {
           <em className="text-primary font-medium">Mulher Virtuosa de Provérbios 31</em>
         </h1>
 
-        <p className="mt-5 text-muted-foreground max-w-xl mx-auto leading-relaxed reveal reveal-delay-2">
+        <p className="mt-5 text-[1rem] sm:text-[1.1rem] text-muted-foreground max-w-xl mx-auto leading-relaxed reveal reveal-delay-2">
           Um devocional prático e profundo para mulheres que desejam fortalecer sua identidade em Deus.
           Organizar sua rotina com propósito e viver uma feminilidade Bíblica com mais leveza, sabedoria e direção.
         </p>
