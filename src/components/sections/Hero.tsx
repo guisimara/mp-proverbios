@@ -1,5 +1,5 @@
-import { HeroMockupStack } from "./ProductMockup";
-import { CTAButton } from "./CTAButton";
+import { HeroMockupStack } from "../ProductMockup";
+import { CTAButton } from "../CTAButton";
 
 const bullets = [
   "Acesso imediato",
