@@ -25,20 +25,14 @@ jobs:
       - name: Build de produção
         run: npm run build
 
-      - name: Instalar lftp
-        run: sudo apt-get install -y lftp
-
-      - name: Deploy via FTP para Hostinger
-        run: |
-          lftp -u "$FTP_USER,$FTP_PASS" "$FTP_SERVER" <<EOF
-          set ftp:passive-mode yes
-          set ssl:verify-certificate no
-          set net:timeout 60
-          set net:max-retries 3
-          mirror -R --delete --no-perms --parallel=4 ./dist/ domains/leticiafessel.com.br/public_html/lp/
-          bye
-          EOF
-        env:
-          FTP_SERVER: 62.72.62.177
-          FTP_USER: u395092397.leticiafessel.com.br
-          FTP_PASS: ${{ secrets.FTP_PASSWORD }}
+      - name: Deploy via SSH/SCP para Hostinger
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASS }}
+          port: 65002
+          source: "dist/*"
+          target: "domains/leticiafessel.com.br/public_html/lp/"
+          strip_components: 1
+          rm: true
