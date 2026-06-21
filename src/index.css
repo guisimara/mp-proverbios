@@ -4,55 +4,55 @@
 
 @layer base {
   :root {
-    /* Mulher de Provérbios — vinho pastel / mauve elegante */
-    --background: 36 38% 96%;          /* warm off-white / cream */
-    --foreground: 25 25% 18%;          /* deep warm brown */
+    /* Mulher de Provérbios — vinho profundo / burgundy */
+    --background: 340 20% 97%;         /* branco quente com toque vinho */
+    --foreground: 340 40% 12%;         /* quase preto com tom vinho */
 
-    --card: 35 50% 98%;
-    --card-foreground: 25 25% 18%;
+    --card: 340 25% 98%;
+    --card-foreground: 340 40% 12%;
 
-    --popover: 35 50% 98%;
-    --popover-foreground: 25 25% 18%;
+    --popover: 340 25% 98%;
+    --popover-foreground: 340 40% 12%;
 
-    --primary: 345 25% 55%;            /* vinho pastel / mauve */
-    --primary-foreground: 36 50% 97%;
+    --primary: 345 65% 28%;            /* vinho profundo / burgundy */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 345 18% 91%;          /* nude vinho muito suave */
-    --secondary-foreground: 25 30% 22%;
+    --secondary: 345 30% 90%;          /* vinho claro de fundo */
+    --secondary-foreground: 345 50% 20%;
 
-    --muted: 345 12% 93%;
-    --muted-foreground: 25 12% 42%;
+    --muted: 345 20% 92%;
+    --muted-foreground: 345 20% 40%;
 
-    --accent: 38 45% 60%;              /* soft gold — mantido */
-    --accent-foreground: 25 30% 18%;
+    --accent: 38 55% 52%;              /* gold — mantido */
+    --accent-foreground: 345 60% 15%;
 
     --gold: 38 55% 55%;
     --gold-soft: 38 50% 78%;
-    --rose: 345 28% 58%;               /* vinho pastel / rose-wine */
-    --rose-soft: 345 25% 91%;
+    --rose: 345 65% 32%;               /* vinho intenso */
+    --rose-soft: 345 35% 88%;
     --olive: 75 20% 38%;
-    --brown: 25 30% 28%;
+    --brown: 345 45% 20%;
 
     --destructive: 0 70% 45%;
-    --destructive-foreground: 36 50% 97%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 345 18% 87%;
-    --input: 345 18% 87%;
-    --ring: 345 25% 55%;
+    --border: 345 30% 82%;
+    --input: 345 30% 82%;
+    --ring: 345 65% 28%;
 
     --radius: 1rem;
 
     /* Gradients & shadows */
-    --gradient-warm: linear-gradient(180deg, hsl(36 45% 97%) 0%, hsl(345 20% 94%) 100%);
-    --gradient-rose: linear-gradient(135deg, hsl(345 28% 65%) 0%, hsl(345 25% 50%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(340 20% 97%) 0%, hsl(345 30% 91%) 100%);
+    --gradient-rose: linear-gradient(135deg, hsl(345 65% 36%) 0%, hsl(345 70% 22%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(38 55% 65%) 0%, hsl(32 45% 50%) 100%);
-    --gradient-offer: linear-gradient(180deg, hsl(36 55% 96%) 0%, hsl(345 22% 92%) 100%);
+    --gradient-offer: linear-gradient(180deg, hsl(340 25% 96%) 0%, hsl(345 35% 88%) 100%);
     --gradient-green: linear-gradient(135deg, hsl(142 42% 58%) 0%, hsl(142 38% 44%) 100%);
 
-    --shadow-soft: 0 4px 24px -8px hsl(25 30% 30% / 0.12);
-    --shadow-elegant: 0 20px 50px -20px hsl(345 25% 35% / 0.22);
+    --shadow-soft: 0 4px 24px -8px hsl(345 40% 20% / 0.15);
+    --shadow-elegant: 0 20px 50px -20px hsl(345 65% 20% / 0.35);
     --shadow-gold: 0 10px 40px -12px hsl(38 55% 45% / 0.35);
-    --shadow-card: 0 2px 12px -4px hsl(25 25% 25% / 0.08);
+    --shadow-card: 0 2px 12px -4px hsl(345 35% 20% / 0.10);
     --shadow-green: 0 10px 40px -12px hsl(142 45% 35% / 0.38);
   }
 }
