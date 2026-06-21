@@ -3,6 +3,8 @@ const photos = [
   "/images/ps2.png",
   "/images/ps3.png",
   "/images/ps4.png",
+  "/images/ps5.png",
+  "/images/ps6.png",
 ];
 
 export function Testimonials() {
@@ -16,7 +18,7 @@ export function Testimonials() {
           Mulheres que começaram essa jornada
         </h2>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 gap-5">
           {photos.map((photo, i) => (
             <div
               key={i}
