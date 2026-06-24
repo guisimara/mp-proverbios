@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { pixel } from "@/lib/pixel";
 
 const CHECKOUT_URL = "https://pay.kiwify.com.br/n09blri";
 
@@ -18,10 +19,17 @@ export function CTAButton({
   const resolvedHref = toCheckout ? CHECKOUT_URL : (href ?? "#oferta");
   const isExternal = resolvedHref.startsWith("http");
 
+  const handleClick = () => {
+    if (toCheckout) {
+      pixel.initiateCheckout();
+    }
+  };
+
   return (
     <div className="flex flex-col items-center gap-3">
       <a
         href={resolvedHref}
+        onClick={handleClick}
         {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         className={variant === "gold" ? "btn-gold" : "btn-primary"}
       >

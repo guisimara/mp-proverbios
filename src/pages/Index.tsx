@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Hero } from "@/components/sections/Hero";
 import { PainPoint } from "@/components/sections/PainPoint";
 import { Transformation } from "@/components/sections/Transformation";
@@ -11,8 +12,13 @@ import { Guarantee } from "@/components/sections/Guarantee";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { StickyCTA } from "@/components/StickyCTA";
+import { pixel } from "@/lib/pixel";
 
 const Index = () => {
+  useEffect(() => {
+    pixel.viewContent();
+  }, []);
+
   return (
     <main className="min-h-screen bg-background">
       <Hero />

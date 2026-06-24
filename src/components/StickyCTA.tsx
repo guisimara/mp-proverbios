@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { pixel } from "@/lib/pixel";
 
 export function StickyCTA() {
   const [visible, setVisible] = useState(false);
@@ -19,6 +20,7 @@ export function StickyCTA() {
       <div className="bg-card/95 backdrop-blur border-t border-border shadow-elegant px-4 py-3">
         <a
           href="#oferta"
+          onClick={() => pixel.initiateCheckout()}
           className="btn-primary w-full text-xs"
         >
           Garantir acesso por R$ 37,90
