@@ -16,7 +16,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Instalar dependências
@@ -25,14 +25,12 @@ jobs:
       - name: Build de produção
         run: npm run build
 
-      - name: Deploy via SSH/SCP para Hostinger
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.SSH_PASS }}
-          port: 65002
-          source: "dist/*"
-          target: "domains/leticiafessel.com.br/public_html/lp/"
-          strip_components: 1
-          rm: true
+      - name: Instalar sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Deploy via rsync para Hostinger
+        run: |
+          sshpass -p "${{ secrets.SSH_PASS }}" rsync -avz --delete \
+            -e "ssh -p 65002 -o StrictHostKeyChecking=no" \
+            dist/ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:domains/leticiafessel.com.br/public_html/lp/
