@@ -3,6 +3,23 @@ import { pixel } from "@/lib/pixel";
 
 const CHECKOUT_URL = "https://pay.kiwify.com.br/n09blri";
 
+/** Pega fbclid e UTMs da URL atual e repassa para o checkout */
+function buildCheckoutUrl(base: string): string {
+  if (typeof window === "undefined") return base;
+  const params = new URLSearchParams(window.location.search);
+  const forward = new URLSearchParams();
+
+  // Parâmetros que o Kiwify usa para atribuição no CAPI
+  const keys = ["fbclid", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
+  keys.forEach((k) => {
+    const v = params.get(k);
+    if (v) forward.set(k, v);
+  });
+
+  const qs = forward.toString();
+  return qs ? `${base}?${qs}` : base;
+}
+
 export function CTAButton({
   children = "Quero começar agora",
   href,
@@ -16,19 +33,25 @@ export function CTAButton({
   variant?: "primary" | "gold";
   microcopy?: string;
 }) {
-  const resolvedHref = toCheckout ? CHECKOUT_URL : (href ?? "#oferta");
-  const isExternal = resolvedHref.startsWith("http");
+  const baseHref = toCheckout ? CHECKOUT_URL : (href ?? "#oferta");
+  const isExternal = baseHref.startsWith("http");
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (toCheckout) {
       pixel.initiateCheckout();
+      // Atualiza o href com fbclid/UTMs antes de navegar
+      const url = buildCheckoutUrl(CHECKOUT_URL);
+      if (url !== CHECKOUT_URL) {
+        e.preventDefault();
+        window.open(url, "_blank", "noopener,noreferrer");
+      }
     }
   };
 
   return (
     <div className="flex flex-col items-center gap-3">
       <a
-        href={resolvedHref}
+        href={baseHref}
         onClick={handleClick}
         {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         className={variant === "gold" ? "btn-gold" : "btn-primary"}

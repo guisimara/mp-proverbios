@@ -1,6 +1,19 @@
 import { useEffect, useState } from "react";
 import { pixel } from "@/lib/pixel";
 
+const CHECKOUT_URL = "https://pay.kiwify.com.br/n09blri";
+
+function buildCheckoutUrl(): string {
+  const params = new URLSearchParams(window.location.search);
+  const forward = new URLSearchParams();
+  ["fbclid", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"].forEach((k) => {
+    const v = params.get(k);
+    if (v) forward.set(k, v);
+  });
+  const qs = forward.toString();
+  return qs ? `${CHECKOUT_URL}?${qs}` : CHECKOUT_URL;
+}
+
 export function StickyCTA() {
   const [visible, setVisible] = useState(false);
 
@@ -19,8 +32,10 @@ export function StickyCTA() {
     >
       <div className="bg-card/95 backdrop-blur border-t border-border shadow-elegant px-4 py-3">
         <a
-          href="#oferta"
+          href={buildCheckoutUrl()}
           onClick={() => pixel.initiateCheckout()}
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn-primary w-full text-xs"
         >
           Garantir acesso por R$ 37,90
