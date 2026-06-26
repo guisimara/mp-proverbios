@@ -66,7 +66,7 @@ const items = [
 
 export function IncludedItems() {
   return (
-    <section className="section bg-gradient-warm">
+    <section id="bonus" className="section bg-gradient-warm">
       <div className="container-page text-center">
         <div className="divider-ornament">
           <span className="text-[0.8rem] tracking-[0.3em] uppercase">Tudo Incluso</span>

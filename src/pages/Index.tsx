@@ -26,11 +26,11 @@ const Index = () => {
       <Transformation />
       <ProductIntro />
       <IncludedItems />
-      <Expert />
       <Audience />
       <Testimonials />
       <Offer />
       <Guarantee />
+      <Expert />
       <FAQ />
       <FinalCTA />
       <StickyCTA />

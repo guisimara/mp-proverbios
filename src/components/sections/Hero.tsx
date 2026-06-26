@@ -56,7 +56,7 @@ export function Hero() {
         </ul>
 
         <div className="mt-10 reveal reveal-delay-3">
-          <CTAButton microcopy="Compra segura • Acesso imediato • Garantia de 7 dias">
+          <CTAButton href="#bonus" microcopy="Compra segura • Acesso imediato • Garantia de 7 dias">
             Quero começar agora
           </CTAButton>
         </div>

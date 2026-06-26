@@ -25,7 +25,7 @@ export function FinalCTA() {
         </div>
 
         <div className="mt-10">
-          <CTAButton variant="gold" microcopy="Clique no botão e receba seu acesso agora.">
+          <CTAButton toCheckout variant="gold" microcopy="Clique no botão e receba seu acesso agora.">
             Sim, quero ser uma Mulher de Provérbios
           </CTAButton>
         </div>

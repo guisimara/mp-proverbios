@@ -46,7 +46,7 @@ export function ProductIntro() {
         </ul>
 
         <div className="mt-10">
-          <CTAButton>Sim, eu quero o material</CTAButton>
+          <CTAButton href="#bonus">Sim, eu quero o material</CTAButton>
         </div>
       </div>
     </section>

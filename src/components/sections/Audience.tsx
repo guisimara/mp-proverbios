@@ -16,38 +16,48 @@ const notForYou = [
 export function Audience() {
   return (
     <section className="section bg-gradient-warm">
-      <div className="container-page space-y-10">
-        <div>
-          <div className="divider-ornament">
-            <span className="text-[0.8rem] tracking-[0.3em] uppercase">Para Você</span>
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-brown leading-tight text-center max-w-lg mx-auto">
-            Esse material é para você se...
-          </h2>
-          <ul className="mt-8 space-y-3 max-w-xl mx-auto">
-            {forYou.map((t) => (
-              <li key={t} className="flex items-start gap-3 card-soft py-4">
-                <span className="w-7 h-7 rounded-full bg-rose/15 text-rose flex items-center justify-center shrink-0">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </span>
-                <p className="text-sm text-brown/90 leading-relaxed">{t}</p>
-              </li>
-            ))}
-          </ul>
+      <div className="container-page">
+        <div className="divider-ornament">
+          <span className="text-[0.8rem] tracking-[0.3em] uppercase">Para Você</span>
         </div>
+        <h2 className="font-serif text-3xl sm:text-4xl text-brown leading-tight text-center max-w-lg mx-auto mb-10">
+          Esse material é para você?
+        </h2>
 
-        <div>
-          <h2 className="font-serif text-2xl sm:text-3xl text-brown/70 leading-tight text-center max-w-lg mx-auto">
-            Esse material não é para você se...
-          </h2>
-          <ul className="mt-6 space-y-3 max-w-xl mx-auto">
-            {notForYou.map((t) => (
-              <li key={t} className="flex items-start gap-3 py-3 px-4 rounded-xl bg-muted/60 border border-border/40">
-                <span className="w-6 h-6 rounded-full bg-muted text-muted-foreground flex items-center justify-center text-sm shrink-0">×</span>
-                <p className="text-sm text-muted-foreground leading-relaxed">{t}</p>
-              </li>
-            ))}
-          </ul>
+        <div className="grid sm:grid-cols-2 gap-5">
+          {/* Card É para você */}
+          <div className="bg-white rounded-2xl border border-border/60 shadow-card p-6 flex flex-col gap-4">
+            <h3 className="font-serif text-lg text-brown text-center mb-2">✅ É para você se...</h3>
+            <ul className="space-y-3">
+              {forYou.map((t) => (
+                <li key={t} className="flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                      <path d="M5 12l5 5L20 7" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <p className="text-sm text-brown/90 leading-relaxed">{t}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Card NÃO é para você */}
+          <div className="bg-white rounded-2xl border border-border/60 shadow-card p-6 flex flex-col gap-4">
+            <h3 className="font-serif text-lg text-brown text-center mb-2">❌ Não é para você se...</h3>
+            <ul className="space-y-3">
+              {notForYou.map((t) => (
+                <li key={t} className="flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 6L6 18M6 6l12 12" stroke="#dc2626" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <p className="text-sm text-brown/90 leading-relaxed">{t}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
