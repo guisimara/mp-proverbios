@@ -25,12 +25,16 @@ jobs:
       - name: Build de produção
         run: npm run build
 
-      - name: Instalar sshpass
-        run: sudo apt-get install -y sshpass
+      - name: Instalar lftp
+        run: sudo apt-get install -y lftp
 
-      - name: Deploy via rsync para Hostinger
+      - name: Deploy via lftp para Hostinger
         run: |
-          sshpass -p "${{ secrets.SSH_PASS }}" rsync -avz --delete \
-            -e "ssh -p 65002 -o StrictHostKeyChecking=no" \
-            dist/ \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:domains/leticiafessel.com.br/public_html/lp/
+          lftp -u "${{ secrets.SSH_USER }}","${{ secrets.SSH_PASS }}" \
+            sftp://${{ secrets.SSH_HOST }}:65002 <<EOF
+          set sftp:auto-confirm yes
+          set net:timeout 30
+          set net:max-retries 3
+          mirror -R --delete --verbose dist/ domains/leticiafessel.com.br/public_html/lp/
+          bye
+          EOF
