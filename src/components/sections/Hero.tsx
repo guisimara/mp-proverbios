@@ -14,14 +14,20 @@ export function Hero() {
         style={{ backgroundImage: "radial-gradient(ellipse at top, hsl(var(--rose-soft)) 0%, transparent 60%)" }} />
       <div className="container-page relative pt-12 pb-16 sm:pt-16 sm:pb-20 text-center">
 
-        {/* By Leticia Fessel — fonte manuscrita, base de logotipo */}
-        <p className="font-script text-2xl sm:text-3xl text-primary/80 tracking-wide reveal">
-          By Leticia Fessel
-        </p>
+        {/* By Leticia Fessel — destaque com ornamento */}
+        <div className="flex flex-col items-center gap-1 reveal">
+          <div className="flex items-center gap-3">
+            <span className="h-px w-10 bg-primary/30" />
+            <p className="font-script text-3xl sm:text-4xl text-primary tracking-wide drop-shadow-sm">
+              By Leticia Fessel
+            </p>
+            <span className="h-px w-10 bg-primary/30" />
+          </div>
+        </div>
 
-        {/* Label sem linhas laterais */}
-        <div className="mt-5 reveal">
-          <span className="text-[0.65rem] tracking-[0.15em] uppercase text-brown/55 font-sans whitespace-nowrap">
+        {/* Label */}
+        <div className="mt-3 reveal">
+          <span className="text-[0.75rem] tracking-[0.22em] uppercase text-brown/65 font-sans whitespace-nowrap">
             Material Cristão Para Mulheres
           </span>
         </div>
