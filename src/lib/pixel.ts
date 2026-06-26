@@ -1,3 +1,9 @@
+// ============================================================
+// ⚠️  ARQUIVO PROTEGIDO — NÃO ALTERAR SEM AUTORIZAÇÃO EXPLÍCITA
+// Rastreamento Meta Pixel — eventos de conversão centralizados
+// Pixel ID: 26718632214483228 | Ver CLAUDE.md
+// ============================================================
+
 declare global {
   interface Window {
     fbq: (...args: unknown[]) => void;

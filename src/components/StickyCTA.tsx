@@ -1,3 +1,9 @@
+// ============================================================
+// ⚠️  ARQUIVO PROTEGIDO — NÃO ALTERAR SEM AUTORIZAÇÃO EXPLÍCITA
+// Repassa fbclid + UTMs para o checkout (atribuição Meta Ads)
+// Ver CLAUDE.md
+// ============================================================
+
 import { useEffect, useState } from "react";
 import { pixel } from "@/lib/pixel";
 

@@ -1,3 +1,10 @@
+// ============================================================
+// ⚠️  ARQUIVO PROTEGIDO — NÃO ALTERAR SEM AUTORIZAÇÃO EXPLÍCITA
+// Repassa fbclid + UTMs para o checkout (atribuição Meta Ads)
+// Remover ou alterar buildCheckoutUrl quebra o rastreamento de compras
+// Ver CLAUDE.md
+// ============================================================
+
 import { ReactNode } from "react";
 import { pixel } from "@/lib/pixel";
 
