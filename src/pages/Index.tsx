@@ -22,12 +22,12 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       <Hero />
+      <Testimonials />
       <PainPoint />
       <Transformation />
       <ProductIntro />
       <IncludedItems />
       <Audience />
-      <Testimonials />
       <Offer />
       <Guarantee />
       <Expert />
