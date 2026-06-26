@@ -27,7 +27,7 @@ export function ProductIntro() {
 
         <div className="mt-10 flex justify-center">
           <img
-            src="/images/mockup-m2.png"
+            src="/images/mockup-m2.webp" loading="lazy" width="600" height="500"
             alt="Mulher de Provérbios"
             className="w-full"
             style={{ maxWidth: "35rem" }}

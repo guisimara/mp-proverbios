@@ -5,3 +5,21 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]
+
+# Cache longo para assets com hash (JS/CSS)
+<FilesMatch "\.(js|css)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# Cache para imagens WebP
+<FilesMatch "\.(webp|png|jpg|jpeg|svg|ico|gif)$">
+  Header set Cache-Control "public, max-age=2592000"
+</FilesMatch>
+
+# Compressão gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Tipos MIME para WebP
+AddType image/webp .webp

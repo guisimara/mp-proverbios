@@ -11,7 +11,7 @@ export function Expert() {
           <div className="relative w-full flex flex-col items-center">
             <div className="w-[40%] aspect-square rounded-full overflow-hidden shadow-elegant border-4 border-card bg-secondary flex items-center justify-center mx-auto">
               <img
-                src="/images/leticia.png"
+                src="/images/leticia.webp" loading="lazy" width="400" height="400"
                 alt="Letícia Fessel"
                 className="w-full h-full object-cover object-top"
                 onError={(e) => {

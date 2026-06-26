@@ -17,7 +17,7 @@ export function FinalCTA() {
 
         <div className="mt-10 flex justify-center">
           <img
-            src="/images/mockup-hero.png"
+            src="/images/mockup-hero.webp" loading="lazy" width="600" height="600"
             alt="Mulher de Provérbios"
             className="w-full"
             style={{ maxWidth: "35rem" }}

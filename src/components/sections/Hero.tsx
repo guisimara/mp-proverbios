@@ -44,9 +44,11 @@ export function Hero() {
 
         <div className="mt-10 flex justify-center reveal reveal-delay-2">
           <img
-            src="/images/mockup-hero.png"
+            src="/images/mockup-hero.webp"
             alt="Mulher de Provérbios"
             className="max-w-sm sm:max-w-lg w-full"
+            width="600" height="600"
+            fetchPriority="high"
           />
         </div>
 

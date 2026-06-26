@@ -14,7 +14,7 @@ export function Guarantee() {
 
           <div className="flex justify-center mt-4 mb-6">
             <img
-              src="/images/mockup-m2.png"
+              src="/images/mockup-m2.webp" loading="lazy" width="600" height="500"
               alt="Garantia de 7 dias"
               className="w-full"
             />

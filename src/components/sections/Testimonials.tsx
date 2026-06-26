@@ -1,10 +1,10 @@
 const photos = [
-  "/images/ps1.png",
-  "/images/ps2.png",
-  "/images/ps3.png",
-  "/images/ps4.png",
-  "/images/ps5.png",
-  "/images/ps6.png",
+  "/images/ps1.webp",
+  "/images/ps2.webp",
+  "/images/ps3.webp",
+  "/images/ps4.webp",
+  "/images/ps5.webp",
+  "/images/ps6.webp",
 ];
 
 export function Testimonials() {
@@ -27,7 +27,7 @@ export function Testimonials() {
               <img
                 src={photo}
                 alt={`Depoimento ${i + 1}`}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain" loading="lazy"
               />
             </div>
           ))}

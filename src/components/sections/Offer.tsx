@@ -65,7 +65,7 @@ export function Offer() {
           {/* Imagem da oferta */}
           <div className="relative mt-8 flex justify-center">
             <img
-              src="/images/mockup-oferta.png"
+              src="/images/mockup-oferta.webp" loading="lazy" width="600" height="500"
               alt="Kit Mulher de Provérbios"
               className="w-full"
               style={{ maxWidth: "40rem" }}
